@@ -1,0 +1,70 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "isBackground": true,
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "command": "idf.py build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Clean",
+            "type": "shell",
+            "isBackground": true,
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "command": "idf.py clean",
+            "problemMatcher": []
+        },
+        {
+            "label": "FullClean",
+            "type": "shell",
+            "isBackground": true,
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "command": "idf.py fullclean",
+            "problemMatcher": []
+        },
+        {
+            "label": "Monitor",
+            "type": "shell",
+            "isBackground": true,
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "command": "idf.py -p COM12 monitor",
+            "problemMatcher": []
+        },
+        {
+            "label": "Flash",
+            "type": "shell",
+            "isBackground": true,
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "command": "idf.py -p COM12 flash",
+            "problemMatcher": []
+        },
+        {
+            "label": "Flash and Monitor",
+            "type": "shell",
+            "isBackground": true,
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "command": "idf.py -p COM12 flash monitor",
+            "problemMatcher": []
+        }
+
+    ]
+}
